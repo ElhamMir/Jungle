@@ -3,7 +3,14 @@
   <header class="page-header">
     <h1>My Cart</h1>
   </header>
-
+  <% if  cart_subtotal_cents == 0 %>
+  <div >The cart is empty!</div>
+  <div>
+  <%= link_to 'Home', :root %>
+</div>
+  <% else %>
+  <div>something else</div>
+  
   <div class="panel panel-default items">
     <table class="table table-bordered">
       <thead>
@@ -27,6 +34,7 @@
           <th>
             <%= humanized_money_with_symbol cart_subtotal_cents / 100.0 %>
           </th>
+         
         </tr>
       </tfoot>
     </table>
@@ -48,5 +56,5 @@
       <% end %>
     </div>
   </div>
-
+  <% end %>
 </section>
