@@ -51,6 +51,18 @@ RSpec.describe User, type: :model do
             expect(user1).eql? user
         end
 
+        it 'will return the user if email and password is correct, Testing with uppercase email' do
+            user = User.new( {:name => "Ali", :email => 'ali@yahoo.com', :password => "4321", :password_confirmation => "4321"})
+            user1 = User.authenticate_with_credentials('ALI@yahoo.com', '4321')
+            expect(user1).eql? user
+        end
+
+        it 'will return nil if password is incorrect' do
+            user = User.new( {:name => "Ali", :email => 'ali@yahoo.com', :password => "4321", :password_confirmation => "4321"})
+            user1 = User.authenticate_with_credentials('ALI@yahoo.com', '42')
+            expect(user1).eql? nil
+        end
+
     end
   
     
