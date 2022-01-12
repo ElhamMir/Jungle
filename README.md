@@ -1,6 +1,20 @@
 # Jungle
 
 A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
+In this project you can add a product or category.
+
+
+**Overview of the store**
+![image](https://user-images.githubusercontent.com/88729973/149235433-24372941-e330-408b-850d-277401eaa984.png)
+
+
+**The admin can add a category**
+![image](https://user-images.githubusercontent.com/88729973/149235257-bedc08cf-0bec-48f5-83d5-4bdb998ff3cb.png)
+
+**The admin can also add or modify a product**
+![image](https://user-images.githubusercontent.com/88729973/149235335-362b9504-9804-4bd4-b2bd-0f5134610d41.png)
+
+
 
 ## Additional Steps for Apple M1 Machines
 
